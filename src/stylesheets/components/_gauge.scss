@@ -1,0 +1,98 @@
+.simpleGauge{
+    @include modalRoundBackground;
+    width: 250px;
+    height: 250px;
+    border-color: $textColorTertiary;
+    position: initial;
+    margin: 2px;
+
+    h1{
+        @include sub-heading;
+        margin: 0px;
+    }
+    h3{
+        font-size: 100px;
+        margin: 0px;
+    }
+
+    h2, .fas, p{
+        display:none;
+    }
+}
+
+.simpleGauge:hover{
+    border-color: $textColorAccent;
+    .fa-plus-circle{
+        font-size: 30px;
+        color: $textColorPrimary;
+        background-color: transparent;
+        border: none;
+        display: inline-block;
+    }
+}
+
+.complexGauge {
+    @include modalForm;
+    position: initial;
+    border-color: $textColorAccent;
+
+    h1{
+        @include sub-heading;
+        margin: 0px 0px 10px 0px;
+    }
+
+    h2{
+        @include sub-heading;
+        color: $textColorPrimary;
+        font-weight: normal;
+        margin: 0px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 100px;
+        margin: 0px;
+    }
+    p{
+        @include paragraph;
+        text-align:center;
+        color: $textColorTertiary;
+        width: 250px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-pen{
+        font-size: 30px;
+        color: $textColorPrimary;
+        background-color: transparent;
+        border: none;
+    }
+
+    .gaugeSelect{
+        width: 100px;
+        height: 100px;
+    }
+
+    .gaugeLevel{
+        font-size: 100px;
+        color: $textColorPrimary;
+        border: none;
+        background: transparent;
+        outline: none;
+    }
+
+    .submitButton{
+        margin-top: 10px;
+    }
+
+    h2, .fa-pen, p{
+        display:block;
+    }
+
+    .fa-plus-circle{
+        display: none;
+    }
+
+}
